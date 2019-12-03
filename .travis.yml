@@ -1,6 +1,16 @@
 language: node_js
+
 node_js:
   - 12
+
 branches:
   only:
-    - /^\d+\.\d+\.\d+$/
+    - master
+
+deploy:
+  provider: npm
+  email: "rherwig4711@gmail.com"
+  api_key:
+    secure: Me8uYxTxPPE4V7zaDD6oh6eLr9EI6kaLvJe6XUs2Aubgv5y+NkZbnkeiYvEi9a0XZaKuNtqsMEpASeXx4jrqPnVV3/8GO9zzR4hLCw16PTFP0+/mFTcby2I7kgIFjCQc3NaqUH0U82a6oAoN2n/Uc40D/gx45avgcYOfZp69tDlP97zBEXaFrSoCftN6k6klDeKnFZ47RTQOORpYhJ6nxIsvvVPgzjo4puJdvKtwqimj0ikra+te/viv3hTXPGm9eOi3f2K7uOwjRLczSt95lXcaD3mU1biCtfZ4AZRL27EM+nnOFWFkdL4IUv8tcL4guYinW/08KJikYhAoQUPDdHvB9394Ikl5OOgalNtxgUjMcsKCSXdhp9Ic0mHipvXXTe4Q/PpYMXNmoefXLKp5pgEV6v/7zCFmPSPQGwBvxZ37vGNdtO0LebgqejwP83dH0Pf48K25WhKdThK5p3R1i28dVpczWxJRErGAnRh5xrAoUK+fLSp7WKBhDCXW3sEvIUzttSssg/c/aAIlFJltp97p3eQSXkpoSBcnPnOEMOC7UtLB+taLGSD3MOCDnPFNlog88WbVjehhkDaOE+mhGXcgT4ti63rpOTBZgrhYLF4WNZ7yAoTW29hAYOe5vS29sOCwMMEgEALqnRWYAQVuBU+IwBkAsLXmoN5wgPTljiI=
+  on:
+    tags: true
